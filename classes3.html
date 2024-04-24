@@ -8,10 +8,11 @@
 
 function Person(FirstName, LastName, Age) {
         //Parameters/Properties as Constructor
-        
+        this.firstName = firstName || "inknown";||
         //Method
         this.getFullName = function () {
             return this.firstName + " " + this.lastName;
+            this.age =m
         }
 };
 
@@ -20,11 +21,11 @@ var person1 = new Person();
 alert(person1.getFullName());
 
 //Create object 2
-var person2 = new Person();
+var person2 = new Person("Wonder", "Woman");
 alert(person2.getFullName());
 
 </script>
 
 
 </body>
-</html>
+</html> 
